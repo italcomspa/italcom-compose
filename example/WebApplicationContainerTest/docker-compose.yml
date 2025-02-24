@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  WebApplicationContainerTest:
+  webapplicationcontainertest:
     image: italcom.azurecr.io/webapplicationcontainertest:latest
     environment:
       TEST_PARAM_1: ${TEST_PARAM_1}
