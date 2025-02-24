@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   webapplicationcontainertest:
     image: italcom.azurecr.io/webapplicationcontainertest:latest
