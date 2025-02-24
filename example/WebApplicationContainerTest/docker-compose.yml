@@ -2,7 +2,8 @@ services:
   WebApplicationContainerTest:
     image: italcom.azurecr.io/webapplicationcontainertest:latest
     environment:
-      TEST_PARAM_1: test_1
+      TEST_PARAM_1: ${TEST_PARAM_1}
+      TEST_PARAM_2: test_2
     ports:
       - 89:8080
     restart: always
