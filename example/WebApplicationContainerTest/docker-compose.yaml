@@ -7,3 +7,4 @@ services:
     ports:
       - "89:8080"
     restart: always
+
