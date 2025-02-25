@@ -9,7 +9,4 @@ services:
       - 92:8080
     restart: always
   env_file:
-    - path: ./stack.env
-      required: true # default
-    - path: ./override.env
-      required: false
+    - stack.env
