@@ -8,4 +8,4 @@ services:
     ports:
       - 92:8080
     restart: always
-  env_file: stack.env
+    env_file: stack.env
