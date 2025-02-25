@@ -15,4 +15,4 @@ services:
       - path: ./override.env
         required: false
     ports:
-      - ${HTTP_PORT}
+      - ${HTTP_PORT_1}
