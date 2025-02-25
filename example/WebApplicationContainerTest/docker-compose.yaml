@@ -15,4 +15,4 @@ services:
       - path: ./override.env
         required: false
     ports:
-      - ${HTTP_PORT_1}
+      - ${HTTP_PORT}:8080
