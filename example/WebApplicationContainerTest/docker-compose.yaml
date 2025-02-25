@@ -6,7 +6,7 @@ services:
       TEST_PARAM_2: test_2
       TEST_PARAM_3: test_3
     ports:
-      - 92:8080
+      - 93:8080
     restart: always
     env_file:
       - path: ./stack.env
