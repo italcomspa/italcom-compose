@@ -2,10 +2,14 @@ services:
   webapplicationcontainertest:
     image: italcom.azurecr.io/webapplicationcontainertest:latest
     environment:
-      TEST_PARAM_1: ${TEST_PARAM_1}
+      #TEST_PARAM_1: ${TEST_PARAM_1}
       TEST_PARAM_2: test_2
       TEST_PARAM_3: test_3
     ports:
       - 92:8080
     restart: always
-    env_file: stack.env
+    env_file:
+      - path: ./stack.env
+        required: true # default
+      - path: ./override.env
+        required: false
