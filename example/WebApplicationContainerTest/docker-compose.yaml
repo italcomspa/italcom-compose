@@ -4,6 +4,7 @@ services:
     environment:
       TEST_PARAM_1: ${TEST_PARAM_1}
       TEST_PARAM_2: test_2
+      TEST_PARAM_3: test_3
     ports:
       - 92:8080
     restart: always
