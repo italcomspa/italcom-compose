@@ -874,7 +874,7 @@
     {
       "id": 43,
       "type": 2,
-      "title": "WordPress",
+      "title": "WordPress ORI",
       "description": "WordPress setup with a MySQL database",
       "note": "Deploys a WordPress instance connected to a MySQL database.",
       "categories": ["CMS"],
