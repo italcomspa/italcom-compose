@@ -2,27 +2,6 @@
   "version": "3",
   "templates": [
     {
-      "id": 43,
-      "type": 2,
-      "title": "WordPress ORI",
-      "description": "WordPress setup with a MySQL database",
-      "note": "Deploys a WordPress instance connected to a MySQL database.",
-      "categories": ["CMS"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/wordpress/docker-stack.yml"
-      },
-      "env": [
-        {
-          "name": "MYSQL_DATABASE_PASSWORD",
-          "label": "Database root password",
-          "description": "Password used by the MySQL root user."
-        }
-      ]
-    },
-    {
       "id": 44,
       "type": 3,
       "title": "WordPress",
@@ -44,29 +23,8 @@
       ]
     },
     {
-      "id": 70,
-      "type": 2,
-      "title": "WordPress 2",
-      "description": "WordPress setup with a MySQL database 2",
-      "note": "Deploys a WordPress instance connected to a MySQL database. 2",
-      "categories": ["CMS"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/wordpress/docker-stack.yml"
-      },
-      "env": [
-        {
-          "name": "MYSQL_DATABASE_PASSWORD",
-          "label": "Database root password",
-          "description": "Password used by the MySQL root user."
-        }
-      ]
-    },
-    {
-      "id": 71,
-      "type": 2,
+      "id": 100,
+      "type": 3,
       "title": "WebApplicationContainer",
       "description": "Test web application",
       "note": "Rilascia una applicazione web di test",
