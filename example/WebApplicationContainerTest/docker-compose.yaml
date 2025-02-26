@@ -16,4 +16,4 @@ services:
     #    required: false
     ports:
       - 1110:8080
-      - ${HTTP_PORT:-95}:8080
+      - ${UGO:-95}:8080
