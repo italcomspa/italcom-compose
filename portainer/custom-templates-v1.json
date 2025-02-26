@@ -37,7 +37,7 @@
       },
       "env": [
         {
-          "name": "APP_CUSTOMER_CODE",
+          "name": "1BGOLD__CUSTOMER_CODE",
           "label": "Codice cliente",
           "description": "Il codice identificativo del cliente"
         },        
@@ -61,10 +61,76 @@
           "label": "Superuser password"
         },
         {
+          "name": "1BGOLD_TAG",
+          "label": "1b gold App tag version",
+          "description": "Version of App to use ('latest' if empty)",
+          "default": "latest"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "type": 3,
+      "title": "1b gold",
+      "description": "Setup di 1b gold con un database postgreSQL",
+      "note": "Installa 1b gold connesso ad un database postgreSQL.",
+      "categories": ["italcom"],
+      "platform": "linux",
+      "logo": "https://i0.wp.com/www.italcom.it/wp-content/uploads/2024/10/Logo_1bGold_piccolo.png",
+      "repository": {
+        "url": "https://github.com/italcomspa/italcom-compose",
+        "stackfile": "stacks/onebgold//docker-compose.yaml"
+      },
+      "env": [
+        {
+          "name": "APP_CUSTOMER_CODE",
+          "label": "Codice cliente",
+          "description": "Il codice identificativo del cliente"
+        },        
+        {
+          "name": "HTTP_PORT",
+          "label": "HTTP port",
+          "description": "Host port to expose HTTP port of App (80 if empty)",
+          "default": "80"
+        },
+        {
+          "name": "POSTGRES_HOST",
+          "label": "PostgreSQL database host",
+          "type": "container"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "label": "PostgreSQL Username"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "PostgreSQL Password"
+        },
+        {
+          "name": "POSTGRES_DBNAME",
+          "label": "PostgreSQL Database name",
+          "description": "Il nome del database da usaree ('Codice cliente' se non compilato)",
+          "default": ""
+        },
+        {
           "name": "VERSION",
           "label": "App version",
           "description": "Version of App to use ('latest' if empty)",
           "default": "latest"
+        },
+        {
+          "name": "ASP_SECRET",
+          "label": "ASP Secret"
+        },
+        {
+          "name": "ASP_CERT_PWD",
+          "label": "ASP Cert Pwd",
+          "description": "ASP certificate password to use ('Docker1b' if empty)",
+          "default": "Docker1b"
+        },
+        {
+          "name": "DIR",
+          "label": "ASP Cert Dir"
         }
       ]
     }
