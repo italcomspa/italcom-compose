@@ -27,6 +27,6 @@ services:
   ### Volumes Setup ###
 volumes:
   app-attachments:
-    name: app-attachments
+    name: ${APP_CUSTOMER_CODE}-app-attachments
     #  external:
     #    name: ${APP_CUSTOMER_CODE}_app_attachments
