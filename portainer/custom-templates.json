@@ -40,6 +40,11 @@
           "name": "APP_CUSTOMER_CODE",
           "label": "Codice cliente",
           "description": "Il codice identificativo del cliente"
+        },        {
+          "name": "HTTP_PORT",
+          "label": "HTTP port",
+          "description": "Host port to expose HTTP port of App (80 if empty)",
+          "default": "80"
         },
         {
           "name": "POSTGRES_HOST",
