@@ -7,9 +7,9 @@ services:
       TEST_PARAM_3: test_3
 
     restart: always
-    env_file:
-      - path: ./.env
-        required: true # default
+    # env_file:
+    #   - path: ./.env
+    #    required: true # default
     #  - path: ./stack.env
     #    required: true # default
     #  - path: ./override.env
