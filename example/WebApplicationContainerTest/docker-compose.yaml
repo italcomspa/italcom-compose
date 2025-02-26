@@ -23,6 +23,9 @@ services:
       - ${HTTP_PORT}:8080
     #  - ${HTTP_PORT:-95}:8080
     volumes:
-      - app_${APP_CUSTOMER_CODE}_attachments:/app/attachments
+      - app_attachments:/app/attachments
+  ### Volumes Setup ###
   volumes:
-    app_${APP_CUSTOMER_CODE}_attachments:
+    app_attachments:
+      external:
+        name: ${APP_CUSTOMER_CODE}_app_attachments
