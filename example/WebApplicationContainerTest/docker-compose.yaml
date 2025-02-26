@@ -24,3 +24,5 @@ services:
     #  - ${HTTP_PORT:-95}:8080
     volumes:
       - app_${APP_CUSTOMER_CODE}_attachments:/app/attachments
+  volumes:
+    app_${APP_CUSTOMER_CODE}_attachments:
