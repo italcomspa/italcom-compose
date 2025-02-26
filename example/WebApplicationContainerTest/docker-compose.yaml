@@ -5,7 +5,12 @@ services:
       #TEST_PARAM_1: ${TEST_PARAM_1}
       TEST_PARAM_2: test_2
       TEST_PARAM_3: test_3
-
+      HTTP_PORT: ${HTTP_PORT}
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      APP_VERSION: ${VERSION}
+      APP_CUSTOMER_CODE: ${APP_CUSTOMER_CODE}
     restart: always
     env_file:
       - path: ./.env
