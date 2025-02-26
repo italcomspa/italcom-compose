@@ -1,0 +1,108 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 43,
+      "type": 2,
+      "title": "WordPress ORI",
+      "description": "WordPress setup with a MySQL database",
+      "note": "Deploys a WordPress instance connected to a MySQL database.",
+      "categories": ["CMS"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+      "repository": {
+        "url": "https://github.com/portainer/templates",
+        "stackfile": "stacks/wordpress/docker-stack.yml"
+      },
+      "env": [
+        {
+          "name": "MYSQL_DATABASE_PASSWORD",
+          "label": "Database root password",
+          "description": "Password used by the MySQL root user."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": 3,
+      "title": "WordPress",
+      "description": "WordPress setup with a MySQL database",
+      "note": "Deploys a WordPress instance connected to a MySQL database.",
+      "categories": ["CMS"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+      "repository": {
+        "url": "https://github.com/portainer/templates",
+        "stackfile": "stacks/wordpress/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "MYSQL_DATABASE_PASSWORD",
+          "label": "Database root password",
+          "description": "Password used by the MySQL root user."
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "type": 2,
+      "title": "WordPress 2",
+      "description": "WordPress setup with a MySQL database 2",
+      "note": "Deploys a WordPress instance connected to a MySQL database. 2",
+      "categories": ["CMS"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+      "repository": {
+        "url": "https://github.com/portainer/templates",
+        "stackfile": "stacks/wordpress/docker-stack.yml"
+      },
+      "env": [
+        {
+          "name": "MYSQL_DATABASE_PASSWORD",
+          "label": "Database root password",
+          "description": "Password used by the MySQL root user."
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "type": 2,
+      "title": "WebApplicationContainer",
+      "description": "Test web application",
+      "note": "Rilascia una applicazione web di test",
+      "categories": ["italcom"],
+      "platform": "linux",
+      "logo": "https://www.italcom.it/wp-content/uploads/2022/09/italcom.webp",
+      "repository": {
+        "url": "https://github.com/italcomspa/italcom-compose",
+        "stackfile": "example/WebApplicationContainerTest/docker-compose.yaml"
+      },
+      "env": [
+        {
+          "name": "APP_CUSTOMER_CODE",
+          "label": "Codice cliente",
+          "description": "Il codice identificativo del cliente"
+        },
+        {
+          "name": "POSTGRES_HOST",
+          "label": "PostgreSQL database host",
+          "type": "container"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "label": "Superuser"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "Superuser password"
+        },
+        {
+          "name": "VERSION",
+          "label": "App version",
+          "description": "Version of App to use ('latest' if empty)",
+          "default": "latest"
+        }
+      ]
+    }
+  ]
+}
