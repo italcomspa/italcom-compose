@@ -1,6 +1,6 @@
 services:
   webapplicationcontainertest:
-    image: italcom.azurecr.io/webapplicationcontainertest:latest
+    image: italcom.azurecr.io/webapplicationcontainertest:${VERSION}
     environment:
       #TEST_PARAM_1: ${TEST_PARAM_1}
       TEST_PARAM_2: test_2
@@ -22,3 +22,5 @@ services:
     ports:
       - ${HTTP_PORT}:8080
     #  - ${HTTP_PORT:-95}:8080
+    volumes:
+      - app_${APP_CUSTOMER_CODE}_attachments:/app/attachments
