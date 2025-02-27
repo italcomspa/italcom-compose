@@ -37,12 +37,12 @@
       },
       "env": [
         {
-          "name": "1BGOLD__CUSTOMER_CODE",
+          "name": "APP_CUSTOMER_CODE",
           "label": "Codice cliente",
           "description": "Il codice identificativo del cliente"
         },        
         {
-          "name": "HTTP_PORT",
+          "name": "APP_HTTP_PORT",
           "label": "HTTP port",
           "description": "Host port to expose HTTP port of App (80 if empty)",
           "default": "80"
@@ -61,8 +61,8 @@
           "label": "Superuser password"
         },
         {
-          "name": "1BGOLD_TAG",
-          "label": "1b gold App tag version",
+          "name": "APP_TAG",
+          "label": "App version",
           "description": "Version of App to use ('latest' if empty)",
           "default": "latest"
         }
@@ -83,12 +83,12 @@
       },
       "env": [
         {
-          "name": "APP_CUSTOMER_CODE",
+          "name": "1BGOLD__CUSTOMER_CODE",
           "label": "Codice cliente",
           "description": "Il codice identificativo del cliente"
         },        
         {
-          "name": "HTTP_PORT",
+          "name": "1BGOLD_HTTP_PORT",
           "label": "HTTP port",
           "description": "Host port to expose HTTP port of App (80 if empty)",
           "default": "80"
@@ -113,8 +113,8 @@
           "default": ""
         },
         {
-          "name": "VERSION",
-          "label": "App version",
+          "name": "1BGOLD_TAG",
+          "label": "1b gold App tag version",
           "description": "Version of App to use ('latest' if empty)",
           "default": "latest"
         },

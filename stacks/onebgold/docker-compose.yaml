@@ -20,7 +20,7 @@ services:
      restart: always
      ports:
       #- '444:444'
-      - ${HTTP_PORT}:80
+      - ${1BGOLD_HTTP_PORT}:80
      networks:
       1b_db_net:
 

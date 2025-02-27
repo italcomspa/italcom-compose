@@ -1,6 +1,6 @@
 services:
   webapplicationcontainertest:
-    image: italcom.azurecr.io/webapplicationcontainertest:${VERSION}
+    image: italcom.azurecr.io/webapplicationcontainertest:${APP_TAG}
     environment:
       #TEST_PARAM_1: ${TEST_PARAM_1}
       TEST_PARAM_2: test_2
@@ -9,7 +9,7 @@ services:
       POSTGRES_HOST: ${POSTGRES_HOST}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      APP_VERSION: ${VERSION}
+      APP_TAG: ${APP_TAG}
       APP_CUSTOMER_CODE: ${APP_CUSTOMER_CODE}
     restart: always
     env_file:
@@ -20,7 +20,7 @@ services:
     #  - path: ./override.env
     #    required: false
     ports:
-      - ${HTTP_PORT}:8080
+      - ${APP_HTTP_PORT}:8080
     #  - ${HTTP_PORT:-95}:8080
     volumes:
       - app-attachments:/app/attachments
